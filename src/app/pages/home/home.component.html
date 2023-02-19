@@ -1,0 +1,79 @@
+<div class="container  max-w-[2000px] w-screen mx-auto h-screen overflow-scroll">
+
+   <!-- Alert Componet -->
+  <app-alert></app-alert>
+
+  <!-- Header Section -->
+  <app-new-header></app-new-header>
+
+
+
+  <div class=" w-full flex justify-center items-center bg-[#1D829A] opacity-75">
+    <div class="text-center text-white my-24">
+      <p class="lg:text-[47px] lg:mx-[330px] mx-10 text-[27px]">
+        100% Automation in Healthcare Operations and Services Such as Claims, Approvals and More...</p>
+      <p class="lg:text-[22px] lg:mx-[330px] mx-16 text-[11px]">We help deliver better solutions for payers, hospitals,
+        doctors, pharmacies, health plans, governments, employers and the millions of lives they touch.</p>
+      <button class="bg-[#4EBECE] text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded mt-4">
+        REQUEST A DEMO</button>
+    </div>
+  </div>
+
+
+  <!-- About Section -->
+  <app-careds [about]="aboutSection"></app-careds>
+
+
+   <!-- Subscribe Section -->
+<form [formGroup]="subscriptonForm" (ngSubmit)="onSubmit()">
+  <div class='w-full h-auto py-4 px-4 bg-[#B8D5E0]'>
+    <p class="text-center md:text-[32px] text-[22px] text-[#16375B] font-bold mt-5 mx-auto">Subscribe Our Newsletter</p>
+    <div class='my-4 md:mx-[30rem]'>
+      <div class='flex flex-col sm:flex-row  items-center justify-between w-full'>
+        <input class='p-3 flex w-full rounded-md text-black' name="email" formControlName="email" type='email' placeholder='Enter your email address' [ngClass]="{ 'is-invalid': getEmail?.errors }" />
+        <button class='bg-[#1D829A] md:text-[15px] text-[10px] text-white rounded-md font-medium w-2/6 ml-1  my-6 px-6 py-4'>
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div *ngIf="getEmail?.touched  &&getEmail?.errors "  class="p-4 mb-4 mx-auto  text-center text-sm text-blue-800 rounded-lg bg-red-500 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <span *ngIf="getEmail?.errors?.['required']"> The Email is Required</span>
+      <span *ngIf="getEmail?.errors?.['pattern']" class="font-medium">Please provide a valid email address</span>
+    </div>
+  </div>
+</form>
+
+
+  <!-- Service Section -->
+  <div class="bg-[#F2F7FA]">
+    <app-careds [about]="serviceSection"></app-careds>
+  </div>
+
+
+<!-- Hero Section -->
+
+  <div class='w-full bg-white py-16 px-4'>
+    <div class='max-w-[1200px] mx-auto grid md:grid-cols-2'>
+      <img class='w-[400px]  mx-auto my-4' src="/assets/images/Shape-Help.svg" alt='/' />
+      <div class='flex flex-col justify-center'>
+        <p class='text-[#16375B] -tracking-[0.64px] font-bold text-[40px]'>Collaborative Intelligence for Better
+          Healthcare</p>
+        <p class='text-[#16375B] font-medium text-[20px] '>Digital Healthcare Solutions for</p>
+        <h1 class='text-[#16375B] md:text-4xl sm:text-3xl text-2xl font-bold'>Government and Healthcare Regulators</h1>
+        <div class="bg-[#2EB9CC] w-[80px] rounded-md font-medium my-3 px-3 py-1"></div>
+        <p class='text-[#16375B] font-medium text-[16px]'>
+          Supporting government firms to facilitate critical and essential health services. We deliver mission-critical
+          business administration solutions for government-funded healthcare plans that minimize expenses, streamline
+          operations, enhance program support, and develop compliance while implementing automatic, easy-to-use tools
+          and gratifying
+          outcomes for the people and communities they serve.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer Section -->
+  <app-footer></app-footer>
+
+
+</div>

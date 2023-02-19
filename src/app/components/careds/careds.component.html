@@ -1,0 +1,36 @@
+<div class='w-full py-[3rem] px-4'>
+  <div class="main-title ">
+    <div class="text-center w-fit mx-auto bg-[#D1F7FC] text-[#2EB9CC] rounded-md
+      font-medium my-6 px-6 py-3">{{about?.question}}</div>
+    <h1 class="text-center text-[40px]">{{about?.title}}</h1>
+    <div class="text-center bg-[#2EB9CC] w-[70px] rounded-md font-medium my-3
+      mx-auto px-3 py-1"></div>
+    <p class="text-center md:mx-[18rem] text-lg pb-11">{{about?.information}}</p>
+  </div>
+
+  <div *ngIf="about?.type=='service'" class=' max-w-[1240px] mx-auto grid md:grid-cols-5 gap-8'>
+    <div *ngFor="let card of about?.item " class='bg-white mx-auto w-2/4 md:w-full shadow-xl flex flex-col
+      p-4 my-4 rounded-lg hover:scale-105 duration-300 hover:bg-[#2EB9CC] group'>
+      <img class='w-20 group-hover:mx-auto  bg-white group-hover:bg-[#2EB9CC]' src="/assets/images/{{card.image}}"
+        alt="/" />
+      <h2 class='text-[#00A4C5] text-2xl font-bold  py-1 group-hover:text-center group-hover:text-white'>{{card.title}}
+      </h2>
+      <div class=' font-medium'>
+        <p class='text-[#00355E] md:text-[18px] text-[11px] py-2 group-hover:text-center group-hover:text-white'>
+          {{card.data}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="about?.type=='about'" class=' max-w-[1240px] mx-auto grid md:grid-cols-4 gap-8'>
+    <div *ngFor="let card of about?.item " class='bg-white mx-auto w-2/4 md:w-full shadow-xl flex flex-col
+    p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+      <img class='w-20 mx-auto mt-[-3rem] bg-white' src="/assets/images/{{card.image}}" alt="/" />
+      <h2 class='text-[#00A4C5] text-2xl font-bold text-center py-1'>{{card.title}}</h2>
+      <div class='text-center font-medium'>
+        <p class='text-[#00355E] md:text-[18px] text-[11px] py-2 md:mx-9 mx-0'>{{card.data}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

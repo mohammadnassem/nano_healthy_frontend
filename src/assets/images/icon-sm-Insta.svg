@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <g id="icon-sm-Insta" transform="translate(16834 15730)">
+    <path id="Path_17812" data-name="Path 17812" d="M15.5,0A15.5,15.5,0,1,1,0,15.5,15.5,15.5,0,0,1,15.5,0Z" transform="translate(-16834 -15730)" fill="#4ebece"/>
+    <g id="Group_7095" data-name="Group 7095" transform="translate(-16826 -15722.176)">
+      <g id="Group_10" data-name="Group 10" transform="translate(0 0)">
+        <path id="Path_6" data-name="Path 6" d="M295.689,352.863H288.7a4.3,4.3,0,0,0-4.3,4.3v6.993a4.3,4.3,0,0,0,4.3,4.3h6.993a4.3,4.3,0,0,0,4.3-4.3V357.16A4.3,4.3,0,0,0,295.689,352.863Zm3.037,11.271a3.055,3.055,0,0,1-3.055,3.055h-6.957a3.055,3.055,0,0,1-3.055-3.055v-6.957a3.055,3.055,0,0,1,3.055-3.055h6.957a3.055,3.055,0,0,1,3.055,3.055Z" transform="translate(-284.4 -352.863)" fill="#fff"/>
+        <path id="Path_7" data-name="Path 7" d="M299.432,363.789a4.107,4.107,0,1,0,4.108,4.107A4.107,4.107,0,0,0,299.432,363.789Zm0,6.786a2.679,2.679,0,1,1,2.679-2.679A2.679,2.679,0,0,1,299.432,370.575Z" transform="translate(-291.64 -360.103)" fill="#fff"/>
+        <path id="Path_8" data-name="Path 8" d="M319.2,361.573a.921.921,0,1,1-.922-.921A.921.921,0,0,1,319.2,361.573Z" transform="translate(-306.24 -358.024)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
